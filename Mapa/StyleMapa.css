@@ -1,0 +1,118 @@
+
+
+.mapa {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3em 0;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa-conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .mapa-conteudo, .video {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+}
+
+/* Restante do seu CSS... */
+
+.video {
+    text-align: center;
+    align-items: center;
+    margin: 2em auto;
+}
+
+.copyright {
+    color: #FFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Anúncios */
+.anuncios {
+    position: sticky;
+    top: 20px; /* Ajuste a distância do topo conforme necessário */
+    float: right;
+    width: 200px;
+    text-align: center;
+}
+
+.anuncio {
+    position: relative; /* Adicione position: relative; para posicionar o botão corretamente */
+    margin-bottom: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.anuncio p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.botao-home {
+    background-color: #0073e6; /* Mesma cor do footer */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+

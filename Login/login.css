@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff; /* Cor predominante (branco) */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    min-height: 480px;
+    overflow: hidden;
+}
+
+.form-container {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.login-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.register-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: #0073e6; /* Cor secundária (azul) */
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-panel h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.overlay-panel p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.overlay-panel button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Avalia.css">
+    <script src="Avaliado.js" async></script>
+
+    <title>Reviews</title>
+</head>
+<body>
+
+    <div id="comments-container">
+        <h2>Comentários e Avaliações</h2>
+        <div class="ranking">
+            <span>Classificação Média:</span>
+            <div class="star-rating" id="average-rating" disabled>
+                <span class="fa fa-star" aria-hidden="true"></span>
+                <span class="fa fa-star" aria-hidden="true"></span>
+                <span class="fa fa-star" aria-hidden="true"></span>
+                <span class="fa fa-star" aria-hidden="true"></span>
+                <span class="fa fa-star" aria-hidden="true"></span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-bar" style="width: 0%;"></div>
+            </div>
+        </div>
+        <ul>
+            <li class="comment"><strong>João</strong> - Avaliação: 4 estrelas<br>Ótimo produto, entrega rápida!</li>
+            <li class="comment"><strong>Maria</strong> - Avaliação: 5 estrelas<br>Estou muito satisfeita com a qualidade do produto.</li>
+            <li class="comment"><strong>Carlos</strong> - Avaliação: 3 estrelas<br>Poderia ter mais opções de cores, mas é bom.</li>
+        </ul>
+    </div>
+
+    <div id="comment-form">
+        <h2>Deixe um comentário:</h2>
+        <form id="add-comment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="rating">Avaliação:</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" class="fa fa-star" aria-hidden="true"></label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4" class="fa fa-star" aria-hidden="true"></label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3" class="fa fa-star" aria-hidden="true"></label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2" class="fa fa-star" aria-hidden="true"></label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1" class="fa fa-star" aria-hidden="true"></label>
+            </div>
+
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" required></textarea>
+
+            <button type="button" onclick="addComment()">Adicionar Comentário</button>
+        </form>
+    </div>
+
+    <footer>
+        <span>Created By <a href="https://github.com/Ursulinocosta">Turma Do Binario</a> | <span
+                class="Copy_bar"></span> 2023 All rights reserved.</span>
+    </footer>
+    
+</body>
+</html>

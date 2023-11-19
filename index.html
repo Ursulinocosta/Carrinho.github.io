@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="Avalição/Avalia.css">
+
+    <script src="BuscaRemedio.js" async></script>
+    <script src="app.js" async></script>
+    <script src="GerarNSU.js" async></script>
+    <script src="IrMapa.js" async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <title>PBM Tudo de bom </title>
+
+</head>
+
+<body>
+
+
+    <div class="top-blue-bar" onclick="irParaHome()">
+        PBM Tudo de bom
+
+        <input class="pesquisar" id="searchbar" onkeyup="search_redemy()" type="text" name="search"
+            placeholder="Pesquisar...">
+    </div>
+    <header>
+        <section class="contenedor">
+
+            <div class="contener-items">
+                <div class="item">
+
+                    <span class="titulo-item">Brasil</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$15.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Argentina</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$25.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Italia</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$35.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Xarelto Conde</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$18.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Xarelto Raia - Ecom</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$15.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Xarelto Pague Menos - Ecom</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$32.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Xarelto Drogasil - Ecom</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$18.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Xarelto Conde - Ecom</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$54.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">X</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$32.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">XA</span>
+                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$42.800</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+
+
+
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Seu Carrinho</h2>
+                </div>
+
+                <div class="carrito-items">
+                    <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">R$15.00,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">R$18.00,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Total</strong>
+                        <span class="carrito-precio-total">
+                            R$120.00,00
+                        </span>
+                        <div>
+                            <button class="btn-pagar">Seguir <i class="fa-solid fa-check"></i> </button>
+                            <span style="margin-right: 10px;"></span> <!-- Espaço entre os botões -->
+                            <button class="btn-pagar" onclick="irParaMapa()"> Maps <i
+                                    class="fa-solid fa-location-dot"></i></button>
+                            <button class="btn-pagar" onclick="gerarENviarNSU()">Gerar e Enviar NSU</button>
+
+                        </div>
+
+                    </div>
+
+
+
+        </section>
+
+
+        <div>
+            <button class="btn-pagar" onclick="irParaMapa()"> Maps <i class="fa-solid fa-location-dot"></i></button>
+            <button class="btn-pagar" onclick="irParaAvaliacao()"> Maps <i
+                    class="fa-solid fa-check-square"></i></a></button>
+        </div>
+        <br>
+        <footer>
+            <span>Created By <a href="https://github.com/Ursulinocosta">Turma Do Binario</a> | <span
+                    class="Copy_bar"></span> 2023 All rights reserved.</span>
+        </footer>
+</body>
+
+</html>
