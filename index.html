@@ -21,6 +21,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
     <title>PBM Tudo de bom </title>
 
 </head>
@@ -40,63 +44,76 @@
             <div class="contener-items">
                 <div class="item">
 
-                    <span class="titulo-item">Brasil</span>
+                    <span class="titulo-item">Xarelto Drogasil</span>
                     <img src="img/Xarelto.png" alt="" class="img-item">
                     <span class="Preco-item">R$15.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
 
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Argentina</span>
+                    <span class="titulo-item">Xarelto Pague Menos</span>
                     <img src="img/Xarelto.png" alt="" class="img-item">
                     <span class="Preco-item">R$25.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Italia</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Yaz  Conde </span>
+                    <img src="img/Yaz.png" alt="" class="img-item">
                     <span class="Preco-item">R$35.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Xarelto Conde</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Yaz Raia</span>
+                    <img src="img/Yaz.png" alt="" class="img-item">
                     <span class="Preco-item">R$18.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Xarelto Raia - Ecom</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Dorene Raia</span>
+                    <img src="img/Dorene.png" alt="" class="img-item">
                     <span class="Preco-item">R$15.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Xarelto Pague Menos - Ecom</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Dorene Pague Menos - Ecom</span>
+                    <img src="img/Dorene.png" alt="" class="img-item">
                     <span class="Preco-item">R$32.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Xarelto Drogasil - Ecom</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Patz Drogasil</span>
+                    <img src="img/Patz.jpg" alt="" class="img-item">
                     <span class="Preco-item">R$18.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">Xarelto Conde - Ecom</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Patz Conde</span>
+                    <img src="img/Patz.jpg" alt="" class="img-item">
                     <span class="Preco-item">R$54.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">X</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Entresto Raia</span>
+                    <img src="img/Entresto.png" alt="" class="img-item">
                     <span class="Preco-item">R$32.00</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
                 <div class="item">
-                    <span class="titulo-item">XA</span>
-                    <img src="img/Xarelto.png" alt="" class="img-item">
+                    <span class="titulo-item">Entresto Pague Menos</span>
+                    <img src="img/Entresto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$42.800</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="item">
+                    <span class="titulo-item">Entresto Raia</span>
+                    <img src="img/Entresto.png" alt="" class="img-item">
+                    <span class="Preco-item">R$32.00</span>
+                    <button class="boton-item">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Entresto Pague Menos</span>
+                    <img src="img/Entresto.png" alt="" class="img-item">
                     <span class="Preco-item">R$42.800</span>
                     <button class="boton-item">Adicionar ao Carrinho</button>
                 </div>
@@ -105,50 +122,18 @@
 
 
 
-            <!-- Carrito de Compras -->
-            <div class="carrito" id="carrito">
-                <div class="header-carrito">
+            <!-- carrinho de Compras -->
+            <div class="carrinho" id="carrinho">
+                <div class="header-carrinho">
                     <h2>Seu Carrinho</h2>
                 </div>
 
-                <div class="carrito-items">
-                    <!-- 
-                <div class="carrito-item">
-                    <img src="img/boxengasse.png" width="80px" alt="">
-                    <div class="carrito-item-detalles">
-                        <span class="carrito-item-titulo">Box Engasse</span>
-                        <div class="selector-cantidad">
-                            <i class="fa-solid fa-minus restar-cantidad"></i>
-                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                            <i class="fa-solid fa-plus sumar-cantidad"></i>
-                        </div>
-                        <span class="carrito-item-precio">R$15.00,00</span>
-                    </div>
-                   <span class="btn-eliminar">
-                        <i class="fa-solid fa-trash"></i>
-                   </span>
+                <div class="carrinho-itens">
                 </div>
-                <div class="carrito-item">
-                    <img src="img/skinglam.png" width="80px" alt="">
-                    <div class="carrito-item-detalles">
-                        <span class="carrito-item-titulo">Skin Glam</span>
-                        <div class="selector-cantidad">
-                            <i class="fa-solid fa-minus restar-cantidad"></i>
-                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
-                            <i class="fa-solid fa-plus sumar-cantidad"></i>
-                        </div>
-                        <span class="carrito-item-precio">R$18.00,00</span>
-                    </div>
-                   <button class="btn-eliminar">
-                        <i class="fa-solid fa-trash"></i>
-                   </button>
-                </div>
-                 -->
-                </div>
-                <div class="carrito-total">
+                <div class="carrinho-total">
                     <div class="fila">
                         <strong>Total</strong>
-                        <span class="carrito-precio-total">
+                        <span class="carrinho-precio-total">
                             R$120.00,00
                         </span>
                         <div>
@@ -156,7 +141,9 @@
                             <span style="margin-right: 10px;"></span> <!-- Espaço entre os botões -->
                             <button class="btn-pagar" onclick="irParaMapa()"> Maps <i
                                     class="fa-solid fa-location-dot"></i></button>
-                            <button class="btn-pagar" onclick="gerarENviarNSU()">Gerar e Enviar NSU</button>
+                            <span style="margin-right: 10px;"></span> <!-- Espaço entre os botões -->
+                            <button class="btn-pagar" onclick="gerarENviarNSU()">Gerar e Enviar NSU<i
+                                    class="fa-solid fa-check"></i> </button>
 
                         </div>
 

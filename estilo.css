@@ -103,8 +103,8 @@ header h1 {
     cursor: pointer;
 }
 
-/* seccion carrito */
-.carrito {
+/* seccion carrinho */
+.carrinho {
     border: 1px solid #666;
     width: 35%;
     margin-top: 30px;
@@ -119,14 +119,14 @@ header h1 {
     opacity: 0;
 }
 
-.carrito .header-carrito {
+.carrinho .header-carrinho {
     background-color: #0073e6;
     color: #fff;
     text-align: center;
     padding: 30px 0;
 }
 
-.carrito .carrito-item {
+.carrinho .carrinho-item {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -135,23 +135,23 @@ header h1 {
     padding: 20px;
 }
 
-.carrito .carrito-item img {
+.carrinho .carrinho-item img {
     margin-right: 20px;
 }
 
-.carrito .carrito-item .carrito-item-titulo {
+.carrinho .carrinho-item .carrinho-item-titulo {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.carrito .carrito-item .selector-cantidad {
+.carrinho .carrinho-item .selector-cantidad {
     display: inline-block;
     margin-right: 25px;
 }
 
-.carrito .carrito-item .carrito-item-cantidad {
+.carrinho .carrinho-item .carrinho-item-cantidad {
     border: none;
     font-size: 18px;
     background-color: transparent;
@@ -161,7 +161,7 @@ header h1 {
     text-align: center;
 }
 
-.carrito .carrito-item .selector-cantidad i {
+.carrinho .carrinho-item .selector-cantidad i {
     font-size: 18px;
     width: 32px;
     height: 32px;
@@ -172,14 +172,14 @@ header h1 {
     cursor: pointer;
 }
 
-.carrito .carrito-item .carrito-item-precio {
+.carrinho .carrinho-item .carrinho-item-precio {
     font-weight: bold;
     display: inline-block;
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.carrito .carrito-item .btn-eliminar {
+.carrinho .carrinho-item .btn-eliminar {
     position: absolute;
     right: 15px;
     top: 15px;
@@ -199,21 +199,21 @@ header h1 {
     z-index: 20;
 }
 
-.carrito .carrito-item .btn-eliminar i {
+.carrinho .carrinho-item .btn-eliminar i {
     pointer-events: none;
 }
 
-.carrito .carrito-item .btn-eliminar:hover {
+.carrinho .carrinho-item .btn-eliminar:hover {
     background-color: #ddd; /* Adicionado efeito de hover para destacar o botão quando o mouse passa por cima */
 }
 
 
-.carrito-total {
+.carrinho-total {
     background-color: #f3f3f3;
     padding: 30px;
 }
 
-.carrito-total .fila {
+.carrinho-total .fila {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,7 +222,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-.carrito-total .btn-pagar {
+.carrinho-total .btn-pagar {
     display: block;
     width: 100%;
     border: none;
@@ -238,7 +238,7 @@ header h1 {
     transition: .3s;
 }
 
-.carrito-total .btn-pagar:hover {
+.carrinho-total .btn-pagar:hover {
     scale: 1.05;
 }
 
@@ -252,7 +252,7 @@ header h1 {
         width: 100% !important;
     }
 
-    .carrito {
+    .carrinho {
         width: 100%;
     }
 }
